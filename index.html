@@ -4,11 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <script src="main.js"></script>
-    <title>Solicitud API</title>
+    <title>Formulario</title>
 </head>
 <body>
-    <h1>Peticion</h1>
+
+    
+    <form id="misDatos" method="post" class="form" action="api.php">
+
+        <div class="form__container">
+            <h2 class="form__title">Formulario</h2>
+
+                <label class="form__label">*</label>
+            <input type="number" name="cedula" placeholder="Cedula:" class="form__input" required>
+
+            <label class="form__label">*</label>
+            <input type="text" name="ciudadexp" placeholder="Ciudad de expedicion:" class="form__input" required>
+
+            <label class="form__label"> Fecha de expedicion</label>
+            <input type="date" name="expedicion" class="form__input" >
+
+            <label class="form__label">*</label>
+        <input type="text" name="nombres" placeholder="Nombre completos:" class="form__input" required>
+
+        <label class="form__label"><br></label>
+        <input type="text" name="apellidos" placeholder="Apellidos:" class="form__input">
+
+        <label class="form__label"> Fecha de nacimiento</label>
+            <input type="date" name="fecha" class="form__input" >
+                
+                
+            <label class="form__label"><br></label>
+            <input type="text" name="ciudad" placeholder="Ciudad de residencia:" class="form__input" >
+
+            <label class="form__label"><br></label>
+            <input type="text" name="direccion" placeholder="Direccion:" class="form__input" >
+
+            <label class="form__label">*</label>
+            <input type="tel" name="movil" placeholder="(+57) numero:" class="form__input" required>
+        
+        <label class="form__label">*</label>
+        <input type="email" name="email" placeholder="Email:" class="form__input" required>
+
+        
+        
+    
+      
+      <input type="submit" value="Pasar datos al PHP" class="form__submit">
+
+        </div>
+        <p class="form__text">(Datos obligatorio *)</p>
+    </form>
+
     <div id="mostrar"></div>
 </body>
 </html>
